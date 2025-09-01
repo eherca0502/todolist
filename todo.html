@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>✅ To-Do List</h2>
+    <p>Bienvenido, <?php session_start(); echo $_SESSION['usuario']; ?> 
+      | <a href="logout.php">Cerrar sesión</a>
+    </p>
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="Escribe una tarea...">
+      <button id="agregar.php">Agregar</button>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
